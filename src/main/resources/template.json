@@ -1,0 +1,27 @@
+{
+  "database": "test",
+  "tableList": [
+    {
+      "tableName": "goods_order",
+      "insert": [
+        {"column": "id"},
+        {"column": "merchant_id"},
+        {"column": "price"},
+        {"column": "pay_type"},
+        {"column": "product_line"},
+        {"column": "sku_info"},
+      ],
+      "update": [
+        {"column": "id"},
+        {"column": "merchant_id"},
+        {"column": "price"},
+        {"column": "pay_type"},
+        {"column": "product_line"},
+        {"column": "sku_info"},
+      ],
+      "delete": [
+        {"column": "id"}
+      ]
+    }
+  ]
+}

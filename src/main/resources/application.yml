@@ -1,0 +1,41 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  jackson:
+    time-zone: GMT+8
+  datasource:
+    ck:
+      driver-class-name: ru.yandex.clickhouse.ClickHouseDriver
+      jdbc-url: jdbc:clickhouse://url:port/database?autoReconnect=true&failOverReadOnly=false
+    #      connection-timeout: 20000
+    #      maximum-pool-size: 5
+    mysql:
+      jdbc-url: jdbc:mysql://url:port/database?useUnicode=true&characterEncoding=utf8&useSSL=true
+      username: root
+      password: 0913lxcd
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+  kafka:
+    bootstrap-servers:
+    listener:
+      concurrency:
+
+  jpa:
+    show-sql: true
+
+server:
+  port: 9527
+
+kafka:
+  topic:
+
+ckconf:
+  mysql:
+    host:
+    port:
+    username:
+    password:
+    #  show master status; binlog???position
+    binlogName:
+    position:
+
